@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan Deogaonkar - Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-fixes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- React & ReactDOM CDN -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <!-- Babel CDN (for JSX Transformation) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+<body>
+    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Open sidebar">
+        <i class='bx bx-menu-alt-left'></i>
+    </button>
+    <div class="sidebar" id="sidebar">
+        <div class="logo"><span class="logo-main">Rohan</span><br><span class="logo-sub">Deogaonkar</span><br><span class="logo-tag">Portfolio 2025</span></div>
+        <div class="sidebar-work">
+            <!-- Removed vertical work links for a cleaner look -->
+        </div>
+        <div class="sidebar-nav-center">
+            <nav class="sidebar-nav-horizontal">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <li><a href="#mywork-ai">AI/ML Projects</a></li>
+                    <li><a href="#mywork-photo">Photography</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="sidebar-links-bottom">
+            <a href="https://www.linkedin.com/in/rohandeogaonkar" class="sidebar-link-btn" target="_blank" rel="noopener">LinkedIn.</a>
+            <a href="https://www.instagram.com/rohanbeingsocial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="sidebar-link-btn" target="_blank" rel="noopener">Instagram.</a>
+            <a href="https://github.com/rohanbeingsocial" class="sidebar-link-btn" target="_blank" rel="noopener">Github.</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <h1>Hi, I am <span>Rohan</span></h1>
+                <h3>I'm <span id="typed-article">a</span> <span id="typed-text"></span></h3>
+                <p>I design intelligent solutions with code, explore the world through a lens, and believe in learning by doing. Whether it's building AI models, writing clean code, or capturing sunsets — I do it with passion.</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rohandeogaonkar" target="_blank" rel="noopener"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/rohanbeingsocial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://github.com/rohanbeingsocial" target="_blank" rel="noopener"><i class='bx bxl-github'></i></a>
+                </div>
+                <div class="buttons">
+                    <a href="#contact" class="btn contact-btn">Contact</a>
+                    <a href="https://drive.google.com/file/d/1QyITn-MMGJRYU3s4FdbHD0B-DVDVLLm7/view?usp=drive_link" class="btn resume-btn" target="_blank" rel="noopener">Resume</a>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about-text">
+                <h1>About <span>Me</span></h1>
+                <div class="about-roles-list">
+                    <div class="about-role-item">
+                        <h3>AI/ML Specialist</h3>
+                        <p>I build intelligent systems that can learn, adapt, and solve real-world problems. My passion lies in leveraging data and algorithms to create smart solutions, from predictive models to automation tools.</p>
+                    </div>
+                    <div class="about-role-item">
+                        <h3>Adventurer</h3>
+                        <p>Exploring new cultures, places, and perspectives fuels my creativity and curiosity. Every journey brings new inspiration and stories that influence my work and worldview.</p>
+                    </div>
+                    <div class="about-role-item">
+                        <h3>Photographer</h3>
+                        <p>I capture moments that tell stories. Through my lens, I seek beauty in the ordinary and strive to evoke emotion and wonder in every photograph.</p>
+                    </div>
+                </div>
+                <a href="#mywork-ai" class="btn about-btn">Read More</a>
+            </div>
+        </section>
+        <section class="extras-section main-section" id="Extras">
+            <div class="extras-grid">
+                <div class="extras-card skills-card">
+                    <h4>SKILLS</h4>
+                    <div>
+                        <ul>
+                        <li>Large Language Models (LLMs): RAG, embeddings</li>
+                        <li>AI Development: Multimodal AI, vector databases (Qdrant), model integration</li>
+                        <li>NLP: Text embeddings, retrieval systems, prompt engineering</li>
+                        <li>Extensively worked on video editing software like Davinci Resolve and Adobe Premiere Pro.</li>
+                        <li>Experience programs like Blender and Autocad for product design and 3D modeling.</li>
+                        <li>Extremely well-versed with computers and using  various online tools like ChatGPT, Stack Overflow and Github for solving problems and learning skills required to tackle common problems</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="extras-card training-card">
+                    <h4>Training</h4>
+                    <div>
+                        Completed Pregrad course for Artificial Intelligence and Machine Learning in Python while touching up on  various fields related to data analysis.
+                    </div>
+                </div>
+                <div class="extras-card education-card">
+                    <h4>Education</h4>
+                    <div class="edu-entry">
+                        <b>MIT World Peace University, Pune</b><br>
+                        August 2024 - Present<br>
+                        Currently studying in the B.Tech ENTC AI/ML field as a first year
+                    </div>
+                    <div class="edu-entry">
+                        <b>Kalmadi Shamarao Junior College, Pune</b><br>
+                        August 2022 - February 2024<br>
+                        Completed 11th and 12th grade in the science stream scoring 82% in 12th final exam
+                    </div>
+                    <div class="edu-entry">
+                        <b>New India School, Pune</b><br>
+                        June 2012 - March 2022<br>
+                        Completed basic education 1st-10th from here scoring 75% in 10th final exam
+                    </div>
+                </div>
+                <div class="extras-card achievements-card">
+                    <h4>Achievements</h4>
+                    <ul>
+                        <li>Successfully managed and engaged a Discord community of 400+ members in my 10th grade.</li>
+                        <li>Independently assembled my personal desktop computer with parts that were bought by me after conducting a thorough research on hardware compatibility.</li>
+                        <li>Created a game with 10,000+ downloads.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="section-title">Contact <span>Me</span></h2>
+            <form action="https://api.web3forms.com/submit" method="POST"class="contact-form">
+                <div class="form-row">
+                    <div class="form-left">
+                        <div class="contact-fields">
+                            <input type="hidden" name="access_key" value="26434e6b-840b-4c27-8b06-95745e0559f6">
+                            <input type="text" name="fullname" placeholder="Full Name" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="text" name="subject" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="form-right">
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn contact-btn-submit">Contact</button>
+            </form>
+        </section>
+        <section class="services main-section work-section" id="mywork-ai">
+            
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="projects-cards" style="display: flex; flex-wrap: wrap; justify-content: flex-start; padding-top: 20px; margin-top: 10px; overflow: visible;">
+                <div class="project-card" style="max-width: min(380px, 90vw) !important; margin-top: 10px; overflow: visible; box-shadow: none;">AI-Powered Engineering Problem Solver with RAG for Diagrams, Equations, and Exams
+                  <button class="read-more-link">Work in Progress</button>
+                </div>
+                <div class="project-card" style="max-width: min(380px, 90vw) !important; margin-top: 10px; overflow: visible; box-shadow: none;">SmartHome - Intelligent Energy Saver (Hackathon Project) 
+                  <a class="read-more-link" href="https://drive.google.com/file/d/1RoUWSIMXG6bzG39WNLPl28OeqXAB8AAR/view?usp=drive_link" target="_blank" rel="noopener">Read More</a>
+                </div>
+                <div class="project-card" style="max-width: min(380px, 90vw) !important; margin-top: 10px; overflow: visible; box-shadow: none;">Multimodal RAG-Based Patient Record Retrieval System
+                  <button class="read-more-link">Work in Progress</button>
+                </div>
+                <div class="project-card" style="display:none;">proj
+                  <button class="read-more-link">Read More</button>
+                </div>
+                <div class="project-card" style="display:none;">proj
+                  <button class="read-more-link">Read More</button>
+                </div>
+            </div>
+           
+            
+        </section>
+        <section class="services main-section work-section" id="mywork-photo">
+            <div class="container">
+                <h2 class="section-title">Photography</h2>
+                <div class="photo-section-content">
+                    <div class="photography-cards-container">
+                        <div class="photography-cards">
+                            <div class="service-card" data-folder="Ixus115">
+                                <div class="service-icon"><i class='bx bx-camera'></i></div>
+                                <h3>Canon Ixus 115</h3>
+                                <p><!-- Add description or leave blank --></p>
+                            </div>
+                            <div class="service-card" data-folder="Ixus970">
+                                <div class="service-icon"><i class='bx bx-camera'></i></div>
+                                <h3>Canon Ixus 970 IS</h3>
+                                <p><!-- Add description or leave blank --></p>
+                            </div>
+                            <div class="service-card" data-folder="Iphone16pro">
+                                <div class="service-icon"><i class='bx bx-mobile-alt'></i></div>
+                                <h3>iPhone 16 Pro</h3>
+                                <!-- Add description or leave blank -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="photo-gallery-display" class="photo-gallery-container"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="sidebar-toggle.js"></script>
+    <script src="responsive-cards.js"></script>
+    <!-- Link to React Component (needs type="text/babel") -->
+    <script type="text/babel" src="PhotoGallery.js"></script>
+    <script>
+        // Smooth scroll to section on hover for sidebar links
+        const sidebarLinks = document.querySelectorAll('.sidebar nav ul li a, .sidebar-work ul li a');
+
+        sidebarLinks.forEach(link => {
+          link.addEventListener('mouseenter', function(e) {
+            const href = link.getAttribute('href');
+            if (href && href.startsWith('#')) {
+              const target = document.querySelector(href);
+              if (target) {
+                // Check if already in view
+                const rect = target.getBoundingClientRect();
+                if (!(rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))) {
+                  target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }
+            }
+          });
+        });
+    </script>
+    <script>
+        // Scroll to Extras section on hover of sidebar link
+        document.addEventListener('DOMContentLoaded', function() {
+            const extrasLink = document.querySelector('.sidebar nav ul li a[href="#Extras"]');
+            if (extrasLink) {
+                extrasLink.addEventListener('mouseenter', function(e) {
+                    const extrasSection = document.getElementById('Extras');
+                    if (extrasSection) {
+                        extrasSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        window.location.hash = 'Extras';
+                    }
+                });
+            }
+        });
+    </script>
+    <script>
+        // Dynamically set --extras-section-height to match #Extras height
+        function setExtrasSectionHeight() {
+            var extras = document.getElementById('Extras');
+            if (extras) {
+                var height = extras.offsetHeight;
+                document.documentElement.style.setProperty('--extras-section-height', height + 'px');
+            }
+        }
+        window.addEventListener('DOMContentLoaded', setExtrasSectionHeight);
+        window.addEventListener('resize', setExtrasSectionHeight);
+        // In case of dynamic content changes
+        setTimeout(setExtrasSectionHeight, 500);
+    </script>
+</body>
+</html>

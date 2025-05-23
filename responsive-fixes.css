@@ -1,0 +1,114 @@
+/* Responsive fixes for AI/ML project cards */
+
+/* Common styles for all project cards to fix the cut-off issue */
+#mywork-ai .projects-cards {
+  padding-top: 20px !important;
+  margin-top: 10px !important;
+  overflow: visible !important;
+  justify-content: flex-start !important;
+}
+
+#mywork-ai .project-card {
+  margin-top: 10px !important;
+  overflow: visible !important;
+  transition: transform 0.3s, box-shadow 0.3s !important;
+  box-shadow: none !important;
+}
+
+/* Shadow only on hover */
+#mywork-ai .project-card:hover {
+  box-shadow: 0 0 2.5rem var(--main-color), 0 0 4rem var(--main-color) !important;
+  transform: scale(1.05) !important;
+}
+
+/* For larger screens */
+@media (min-width: 1400px) {
+  #mywork-ai .project-card {
+    flex: 0 0 380px !important;
+    max-width: 380px !important;
+    min-width: 280px !important;
+    font-size: 2.1rem !important;
+  }
+}
+
+/* For medium-large screens */
+@media (max-width: 1400px) and (min-width: 1200px) {
+  #mywork-ai .project-card {
+    flex: 0 0 340px !important;
+    max-width: 340px !important;
+    font-size: 2rem !important;
+  }
+}
+
+/* For medium screens */
+@media (max-width: 1200px) and (min-width: 1100px) {
+  #mywork-ai .project-card {
+    flex: 0 0 300px !important;
+    max-width: 300px !important;
+    font-size: 1.9rem !important;
+    padding: 4rem 2.5rem 4rem 2.5rem !important;
+  }
+}
+
+/* For medium-small screens */
+@media (max-width: 1100px) and (min-width: 991px) {
+  #mywork-ai .project-card {
+    flex: 0 0 280px !important;
+    max-width: 280px !important;
+    min-width: 240px !important;
+    font-size: 1.8rem !important;
+  }
+}
+
+/* For small screens */
+@media (max-width: 991px) and (min-width: 768px) {
+  #mywork-ai .projects-cards {
+    gap: 1.5rem !important;
+  }
+  #mywork-ai .project-card {
+    flex: 0 0 240px !important;
+    max-width: 240px !important;
+    min-width: 200px !important;
+    font-size: 1.7rem !important;
+    padding: 3.5rem 2rem 4rem 2rem !important;
+  }
+}
+
+/* For tablets */
+@media (max-width: 768px) and (min-width: 600px) {
+  #mywork-ai .projects-cards {
+    flex-direction: column !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    gap: 2rem !important;
+  }
+  #mywork-ai .project-card {
+    width: 90% !important;
+    max-width: 360px !important;
+    min-width: 280px !important;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 600px) {
+  #mywork-ai .projects-cards {
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  #mywork-ai .project-card {
+    width: 90% !important;
+    max-width: 320px !important;
+    min-width: 260px !important;
+  }
+}
+
+/* For small mobile devices */
+@media (max-width: 480px) {
+  #mywork-ai .project-card {
+    width: 95% !important;
+    max-width: 300px !important;
+    min-width: 0 !important;
+    padding: 3rem 1.5rem 4rem 1.5rem !important;
+  }
+} 
